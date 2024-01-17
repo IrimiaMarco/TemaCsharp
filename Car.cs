@@ -3,33 +3,34 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace TemaCsharp
 {
-    internal class Car
+    class Car : Vehicle
     {
-        public string color;
-        public string name;
-        public int year;
-        public int maxSpeed;
-        public Car(string nameN, string colorN, int yearN, int maxN)
-        {
-            name = nameN;
-            color = colorN;
-            year = yearN;
-            maxSpeed = maxN;
 
+
+        public Car(string nameName, string colorName, int yearValue, int maxSpeedValue)
+        {
+            Name = nameName;
+            Color = colorName;
+            Year = yearValue;
+            MaxSpeed = maxSpeedValue;
         }
 
-        public Car(string nameN)
+        public Car(string nameName, string colorName, int yearValue, int maxSpeedValue, string eng_type)
         {
-            name = nameN;
+            Name = nameName;
+            Color = colorName;
+            Year = yearValue;
+            MaxSpeed = maxSpeedValue;
+            engine_type = eng_type;
         }
 
-        public void fullThrottle()
+        public Car(string nameName)
         {
-            Console.WriteLine(name + " is going at the speed of " + maxSpeed);
+            Name = nameName;
         }
-
     }
 }

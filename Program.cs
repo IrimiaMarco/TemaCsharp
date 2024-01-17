@@ -13,16 +13,17 @@ namespace TemaCsharp
             Car Ford = new Car("Mustang", "white", 2021, 100);
             Car Opel = new Car("Astra", "blue", 2020, 120);
             Car BMW = new Car("EX5");
-            Console.WriteLine(Ford.name);
-            Console.WriteLine(Ford.year);
-            Console.WriteLine(Ford.color);
-            Console.WriteLine(Ford.maxSpeed);
-            Console.WriteLine(Opel.name);
-            Console.WriteLine(Opel.year);
-            Console.WriteLine(Opel.color);
-            Console.WriteLine(Opel.maxSpeed);
-
-            Console.WriteLine(BMW.name);
+            Console.WriteLine(Ford.Name);
+            Console.WriteLine(Ford.Year);
+            Console.WriteLine(Ford.Color);
+            Console.WriteLine(Ford.MaxSpeed);
+            Console.WriteLine(Opel.Name);
+            Console.WriteLine(Opel.Year);
+            Console.WriteLine(Opel.Color);
+            Console.WriteLine(Opel.MaxSpeed);
+            Console.WriteLine(BMW.Name);
+            Console.WriteLine();
+            Ford.honk();
             Console.ReadKey();
         }
     }
